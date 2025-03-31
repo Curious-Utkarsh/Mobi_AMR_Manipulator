@@ -1,0 +1,10 @@
+<library path="mobi_firmware">
+    <class name="mobi_firmware/MobiInterface"
+      type="mobi_firmware::MobiInterface"
+      base_class_type="hardware_interface::SystemInterface"
+    >
+      <description>
+        Mobi Hardware Interface
+      </description>
+    </class>
+  </library>

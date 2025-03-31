@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<robot name="mobi" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:include filename="$(find mobi_description)/urdf/materials.xacro" />
+    <xacro:include filename="$(find mobi_description)/urdf/gazebo.xacro" />
+    <xacro:include filename="$(find mobi_description)/urdf/ros2_control.xacro" />
+    <xacro:include filename="$(find mobi_description)/urdf/mobi_base.xacro" />
+
+</robot>
