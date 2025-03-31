@@ -6,7 +6,7 @@
   <description>The mobi_firmware package</description>
   <maintainer email="kutkarsh706@gmail.com">utk</maintainer>
   <license>Apache 2.0</license>
-  <author email="antonio.brandi@outlook.it">Antonio Brandi</author>
+  <author email="kutkarsh706@gmail.com">utk</author>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
   <buildtool_depend>ament_cmake_python</buildtool_depend>
