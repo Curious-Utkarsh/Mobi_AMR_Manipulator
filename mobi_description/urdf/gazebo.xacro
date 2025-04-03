@@ -110,14 +110,14 @@
     </gazebo>
 
 
-    <gazebo reference="lidar_link">
+    <gazebo reference="laser_link">
         <sensor name="lidar" type="gpu_lidar">
             <pose>0 0 0 0 0 0</pose>
             <always_on>true</always_on>
             <visualize>true</visualize>
             <topic>scan</topic>
             <update_rate>5</update_rate>
-            <gz_frame_id>lidar_link</gz_frame_id> 
+            <gz_frame_id>laser_link</gz_frame_id> 
             <lidar>
                 <scan>
                     <horizontal>
