@@ -112,7 +112,7 @@
 
     <gazebo reference="laser_link">
         <sensor name="lidar" type="gpu_lidar">
-            <pose>0 0 0 0 0 0</pose>
+            <pose>0 0 0 0 0 3.14</pose>
             <always_on>true</always_on>
             <visualize>true</visualize>
             <topic>scan</topic>

@@ -166,8 +166,8 @@ void loop()
   unsigned long current_millis = millis();
   if(current_millis - last_millis >= interval)
   {
-    right_wheel_meas_vel = 10*rightEncoderCount*(60.0/(270.0*334.0*1.87)) * 0.10472; //Hit and Trial Factor 1.88 done manually
-    left_wheel_meas_vel = 10*leftEncoderCount*(60.0/(270.0*334.0*1.87)) * 0.10472; 
+    right_wheel_meas_vel = 10*(rightEncoderCount/2)*(60.0/(270.0*334.0*1.87)) * 0.10472; //Hit and Trial Factor 1.88 done manually
+    left_wheel_meas_vel = 10*(leftEncoderCount/2)*(60.0/(270.0*334.0*1.87)) * 0.10472; 
 
     rightMotor.Compute();
     leftMotor.Compute();
@@ -199,11 +199,11 @@ void IRAM_ATTR leftEncoderISR()
   leftEncoderCount++;
   if (digitalRead(LEFT_ENCODER_A_PIN) == digitalRead(LEFT_ENCODER_B_PIN)) 
   {
-    left_wheel_sign = "n";
+    left_wheel_sign = "p";
   }
   else
   {
-    left_wheel_sign = "p";
+    left_wheel_sign = "n";
   }
 }
 
@@ -212,11 +212,11 @@ void IRAM_ATTR rightEncoderISR()
   rightEncoderCount++;
   if (digitalRead(RIGHT_ENCODER_A_PIN) == digitalRead(RIGHT_ENCODER_B_PIN)) 
   {
-    right_wheel_sign = "p";
+    right_wheel_sign = "n";
   }
   else
   {
-    right_wheel_sign = "n";
+    right_wheel_sign = "p";
   }
 }
 

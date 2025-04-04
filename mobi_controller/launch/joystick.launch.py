@@ -45,19 +45,11 @@ def generate_launch_description():
         }.items(),
     )
 
-    # relay_node = Node(
-    #     package="mobi_controller",
-    #     executable="relay_node",
-    #     name="relay_node",
-    #     parameters=[{"use_sim_time": LaunchConfiguration("use_sim_time")}]
-    # )
-
     return LaunchDescription(
         [
             use_sim_time_arg,
             joy_teleop,
             joy_node,
             twist_mux_launch,
-            #relay_node,
         ]
     )
